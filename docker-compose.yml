@@ -1,0 +1,12 @@
+services:
+  comfyui-nvidia:
+    build: .
+    ports:
+      - "8188:8188"
+    volumes:
+      - models:/app/models:Z
+      - user:/app/user
+
+volumes:
+  models:
+  user:
